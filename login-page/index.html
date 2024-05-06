@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="img-container">
+        <!-- <img src="img/Ocean_Water_1920x1080.jpg" alt="ocean water" /> -->
+      </div>
+      <div class="login-container">
+        <div class="login-child-container">
+          <div class="company-icon">
+            <i class="fa fa-camera-retro fa-3x"></i>
+          </div>
+          <!-- <form class="email-collector" action="#" method="POST">
+          <input type="text" required placeholder="first name" />
+          <input type="email" required placeholder="email" />
+          <button class="btn btn-primary" type="submit">Register</button>
+        </form> -->
+          <form action="" method="POST">
+            <div>
+              <label for="username">User name:</label>
+              <br />
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="johndoe"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="pass">password:</label>
+              <br />
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                maxlength="12"
+                required
+              />
+            </div>
+            <br />
+
+            <!-- <div>
+            <label for="email">email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="SPants@gmail.com"
+            />
+          </div> -->
+
+            <div>
+              <label for="rememberme">Remember me:</label>
+              <input type="checkbox" id="rememberme" name="rememberme" />
+            </div>
+
+            <br />
+
+            <div>
+              <input type="reset" />
+            </div>
+
+            <br />
+
+            <div>
+              <input type="submit" />
+            </div>
+          </form>
+          <p class="fine-print">
+            We'll never share your information without your permission
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

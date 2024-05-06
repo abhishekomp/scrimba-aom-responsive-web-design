@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* img{
+  width: 50%;
+} */
+
+.body-container{
+  display: flex;
+}
+
+.img-container {
+  width: 50%;
+  max-width: 800px;
+  height: 100vh;
+  /* height: 344px; */
+  background-color: rgb(94, 26, 184);
+  /* border:2px solid red; */
+  /* background-image: url('../img/Ocean_Water_1920x1080.jpg'); */
+  background-image: url('../img/lake_mountains_forest_1225249_1280x960.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* color: white; */
+}
+
+/* .body-container > div:last-child{
+  border: 2px dotted blue;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+} */
+
+.login-container{
+  background-color: rgba(235, 229, 229, 0.817);
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.login-child-container{
+  width: 50%;
+  /* border: 1px solid red; */
+  
+}
+
+.company-icon{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+form{
+  background-color: white;
+  padding: .5em auto;
+}
+
