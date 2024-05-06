@@ -76,9 +76,11 @@ section {
   padding: 45px 0;
 }
 
+/* Try making this container responsive. A good approach would be to set the width: 90% so that it works fine on mobile screens. At the same time, set max-width so that the container does not keep getting bigger with bigger screen. Lock the width uisng max-width on the container. */
 .container {
-  width: 90%;
-  max-width: 620px;
+  width: 620px;
+  /* width: 90%; */
+  /* max-width: 620px; */
   margin: 0 auto;
   border: 2px solid magenta;
 }
