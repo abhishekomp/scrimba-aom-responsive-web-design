@@ -130,3 +130,24 @@ body{
 .login-button:focus{
   background-color: hsl(var(--primary-hsl), .4);
 }
+
+/* The login container was overflowing in landscape mode on mobile. */
+@media screen and (max-height: 450px) and (orientation: landscape) {
+  .login-container{
+    padding: 1em 1em;
+    width: 70%;
+    max-width: 675px;
+  }
+  .form{
+    margin-top: 1em;
+  }
+  .input-group input{
+    font-size: 1rem;
+  }
+
+  .login-button{
+    padding: .4em 1em;
+    font-size: 1rem;
+    color: white;
+  }
+}
