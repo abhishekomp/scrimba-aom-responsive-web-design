@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Reset</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Counters</h1>
+    
+    <!-- Adding numbers to existing elements -->
+    <dl>
+       <dt>term</dt>
+       <dd>description</dd>
+       <dt>term</dt>
+       <dd>description</dd>
+       <dt>term</dt>
+       <dd>description</dd>
+    </dl>
+    
+    <!-- Adding numbers and quotes to visually connect to other content -->
+    <section>
+        <p>Lorem ipsum dolor sit amet<sup></sup>, consectetur adipisicing elit. Cumque, natus temporibus odio itaque saepe! Commodi nesciunt pariatur repellendus<sup></sup> illo, voluptates ex vero quas hic dolor consequuntur eaque, saepe et recusandae.</p>
+        <p>Laudantium dignissimos soluta adipisci amet, quae magni. Officia repellat dolorum maxime quia dolores iste magni nobis ad modi<sup></sup>, delectus ullam quae obcaecati minima, quasi exercitationem quibusdam. Asperiores, atque placeat quae.</p>
+    </section>
+    <ol>
+        <li>First note</li>
+        <li>Second note</li>
+    </ol>
+    
+    <!-- Counting items based on state -->
+    <section>
+        <div class="counting-items counting-food" >
+            <p>
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="pizza" value="za"/>
+            </p>
+            <p>
+                <label for="burgers">Burgers</label>
+                <input type="checkbox" id="burgers" value="burg"/>
+            </p>
+          </div>
+        <div class="counting-items counting-info">
+            <p>
+                <label for="nm">Username</label>
+                <input type="text" id="nm" required/>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" required/>
+            </p>
+          </div>
+        <div>
+            <p class="food-total">Food items selected: </p>
+            <p class="info-total">Text fields filled out: </p>
+        </div>
+    </section>
+    
+    <!-- count the number of active divs -->
+    <section class="divs">
+        <div class="selectable">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero velit ad ut, odit deleniti, tempore ipsam maiores odio numquam, necessitatibus nam est distinctio nulla cumque expedita fugit et blanditiis ab.</p>
+        </div>
+        <div class="selectable">
+            <p>Voluptatem commodi dolorem laudantium voluptates doloremque exercitationem sit distinctio reiciendis, provident blanditiis consequatur, repellat ducimus deleniti, laboriosam beatae. Debitis voluptatibus nam error deserunt unde nihil quisquam, alias fugiat, praesentium facilis?</p>
+        </div>
+        <div class="selectable">
+            <p>Numquam quasi doloremque possimus autem sequi earum, odio nisi at, debitis odit illum consequatur cumque! Dolore beatae modi, porro? Dignissimos, vitae totam mollitia, repellat debitis est iusto autem tempore facilis.</p>
+        </div>
+        <div class="output">
+            Divs selected 
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let divs = document.querySelectorAll('.selectable');
+            [].forEach.call(divs, (div)=>{
+                div.addEventListener('click', ()=>{
+                    div.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

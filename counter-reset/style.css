@@ -1,0 +1,80 @@
+dl{
+  counter-reset: term 0;
+  /* name for counter ~ starting value */
+}
+
+dt::before {
+  counter-increment: term 1;
+  /* which counter ~ increment amount */
+  content: counter(term) " ";
+  /* add a space after the counter value */
+  color: deepskyblue;
+  /* font-size: .8em; */
+}
+
+section {
+  counter-reset: note;
+}
+
+sup::before {
+  counter-increment: note;
+  content: " " counter(note);
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.counting-items{
+  border: 1px solid #666;
+}
+
+.counting-food{
+  counter-reset: food; 
+}
+
+input:checked{
+  counter-increment: food;
+}
+
+.food-total::after{
+  content: open-quote counter(food) close-quote;
+}
+
+.counting-info {
+  counter-reset: food-count;
+}
+
+input[type="text"]:valid{
+  counter-increment: food-count;
+}
+
+input[type="email"]:valid{
+  counter-increment: food-count;
+}
+.info-total:after{
+  content: open-quote counter(food-count) close-quote;
+}
+
+.divs{
+  counter-reset: divs;
+}
+
+.divs div{
+  margin: 1rem;
+}
+
+.divs p{
+  padding: 1rem;
+}
+
+.selectable{
+  border: 1px solid #666;
+  background-color: #ddd;
+}
+.selectable.active{
+  background-color: goldenrod;
+  counter-increment: divs;
+}
+.output:after{
+  content: counter(divs)
+}
